@@ -1,0 +1,149 @@
+{
+  "name": "RNTypescriptStarter",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "watchman watch-del-all && react-native start",
+    "test": "jest",
+    "i18n-lint": "eslint --fix --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js ./src/localization/locales",
+    "sync:i18n": "ts-node --project ./scripts/tsconfig.json ./scripts/sync-translations.ts",
+    "test:e2e": "detox test -c ios.sim.debug",
+    "build:e2e": "detox build -c ios.sim.debug",
+    "ci:test:e2e": "detox test -c ios.sim.release -l verbose --cleanup",
+    "ci:build:e2e": "detox build -c ios.sim.release",
+    "storybook": "start-storybook -p 6006",
+    "clean-project": "react-native-clean-project",
+    "reset-ios": "rm -rf ~/Library/Caches/CocoaPods && rm -rf ~/Library/Developer/Xcode/DerivedData/* && rm -rf Pods && pod deintegrate && pod cache clean --all && pod setup && pod install",
+    "prestorybook": "rnstl",
+    "adb": "adb reverse tcp:9090 tcp:9090 && adb reverse tcp:3000 tcp:3000 && adb reverse tcp:9001 tcp:9001 && adb reverse tcp:8081 tcp:8081",
+    "build": "yarn run tsc",
+    "clean": "react-native-clean-project",
+    "clean-all": "npx react-native clean-project-auto",
+    "lint": "eslint --fix  \"**/*.{js,ts,tsx}\""
+  },
+  "config": {
+    "react-native-storybook-loader": {
+      "searchDir": [
+        "./src/**/**"
+      ],
+      "pattern": "**/*.stories.tsx",
+      "outputFile": "./.storybook/storyLoader.js"
+    }
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.15.14",
+    "@react-native-community/clipboard": "^1.5.1",
+    "@react-native-community/datetimepicker": "^3.4.6",
+    "@react-native-community/netinfo": "^8.1.0",
+    "@react-native-masked-view/masked-view": "^0.2.6",
+    "@react-navigation/bottom-tabs": "^6.3.1",
+    "@react-navigation/native": "^6.0.8",
+    "@react-navigation/stack": "^6.1.1",
+    "@tarikfp/react-native-utils": "^0.0.11",
+    "axios": "^0.27.2",
+    "i18next": "^20.6.1",
+    "react": "17.0.2",
+    "react-i18next": "^11.12.0",
+    "react-native": "0.68.1",
+    "react-native-dotenv": "^3.3.1",
+    "react-native-gesture-handler": "^2.4.2",
+    "react-native-keychain": "^8.0.0",
+    "react-native-modal": "^13.0.1",
+    "react-native-safe-area-context": "^4.2.4",
+    "react-native-screens": "^3.13.1",
+    "react-native-vector-icons": "^9.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.0",
+    "@babel/runtime": "^7.12.5",
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-knobs": "^5.3",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/addon-ondevice-actions": "^5.3.23",
+    "@storybook/addon-ondevice-knobs": "^5.3.25",
+    "@storybook/react": "^6.4.19",
+    "@storybook/react-native": "^5.3.25",
+    "@storybook/react-native-server": "^5.3.23",
+    "@storybook/testing-library": "^0.0.9",
+    "@testing-library/jest-native": "^4.0.4",
+    "@testing-library/react-native": "^9.1.0",
+    "@types/jest": "^26.0.23",
+    "@types/react-native": "^0.67.3",
+    "@types/react-native-vector-icons": "^6.4.11",
+    "@types/react-test-renderer": "^17.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
+    "babel-jest": "^26.6.3",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "detox": "^19.8.2",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-import-resolver-node": "^0.3.6",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-i18n-json": "^3.1.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^26.6.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^3.2.0",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-react-native": "^4.0.0",
+    "husky": "^7.0.4",
+    "jest": "^26.6.3",
+    "metro-react-native-babel-preset": "^0.67.0",
+    "prettier": "^2.6.1",
+    "react-native-storybook-loader": "^2.0.5",
+    "react-test-renderer": "17.0.2",
+    "reactotron-react-native": "^5.0.1",
+    "reactotron-redux": "^3.1.3",
+    "reflect-metadata": "^0.1.13",
+    "ts-jest": "26.5.6",
+    "typescript": "^4.4.4",
+    "utility-types": "^3.10.0"
+  },
+  "resolutions": {
+    "@types/react": "^17"
+  },
+  "jest": {
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "detox": {
+    "test-runner": "jest",
+    "configurations": {
+      "ios.sim.debug": {
+        "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/RNTypescriptStarter.app",
+        "build": "xcodebuild -workspace ios/RNTypescriptStarter.xcworkspace -scheme RNTypescriptStarter -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build -destination 'name=iPhone 11'",
+        "type": "ios.simulator",
+        "device": {
+          "name": "iPhone 11"
+        }
+      },
+      "ios.sim.release": {
+        "binaryPath": "ios/build/Build/Products/Release-iphonesimulator/RNTypescriptStarter.app",
+        "build": "xcodebuild -workspace ios/RNTypescriptStarter.xcworkspace -scheme RNTypescriptStarter -configuration Release -sdk iphonesimulator -derivedDataPath ios/build -destination 'name=iPhone 11'",
+        "type": "ios.simulator",
+        "device": {
+          "name": "iPhone 11"
+        }
+      }
+    }
+  }
+}
