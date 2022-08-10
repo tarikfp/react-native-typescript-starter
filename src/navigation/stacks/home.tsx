@@ -1,13 +1,13 @@
-import * as React from "react";
+import { RouteConfig, StackNavigationState } from "@react-navigation/native";
 import {
   createStackNavigator,
-  StackNavigationOptions,
   StackNavigationEventMap,
+  StackNavigationOptions,
 } from "@react-navigation/stack";
-import { RouteConfig, StackNavigationState } from "@react-navigation/native";
-import { HomeScreen } from "@/screens/home";
-import { HomeStackParamList } from "../types";
+import * as React from "react";
+import { HomeScreen } from "~screens/home";
 import { RouteNames } from "../route-names";
+import { HomeStackParamList } from "../types";
 
 const Stack = createStackNavigator<HomeStackParamList>();
 

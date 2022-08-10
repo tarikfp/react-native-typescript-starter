@@ -33,7 +33,6 @@
     }
   },
   "dependencies": {
-    "@react-native-async-storage/async-storage": "^1.15.14",
     "@react-native-community/clipboard": "^1.5.1",
     "@react-native-community/datetimepicker": "^3.4.6",
     "@react-native-community/netinfo": "^8.1.0",
@@ -50,6 +49,7 @@
     "react-native-dotenv": "^3.3.1",
     "react-native-gesture-handler": "^2.4.2",
     "react-native-keychain": "^8.0.0",
+    "react-native-mmkv": "^2.4.3",
     "react-native-modal": "^13.0.1",
     "react-native-safe-area-context": "^4.2.4",
     "react-native-screens": "^3.13.1",
@@ -102,6 +102,8 @@
     "jest": "^26.6.3",
     "metro-react-native-babel-preset": "^0.67.0",
     "prettier": "^2.6.1",
+    "react-native-clean-project": "^4.0.1",
+    "react-native-rename": "^2.9.0",
     "react-native-storybook-loader": "^2.0.5",
     "react-test-renderer": "17.0.2",
     "reactotron-react-native": "^5.0.1",

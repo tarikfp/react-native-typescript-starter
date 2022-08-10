@@ -1,7 +1,9 @@
-import { BottomTabBarOptionByRouteName } from "@/navigation/helpers/tabbar-options";
-import { BottomTabNavigationOptions } from "@react-navigation/bottom-tabs";
+import {
+  BottomTabNavigationEventMap,
+  BottomTabNavigationOptions,
+} from "@react-navigation/bottom-tabs";
 import { RouteConfig, StackNavigationState } from "@react-navigation/native";
-import { StackNavigationEventMap } from "@react-navigation/stack";
+import { BottomTabBarOptionByRouteName } from "~navigation/helpers/tabbar-options";
 import { RouteNames } from "../route-names";
 import HomeStack from "../stacks/home";
 import ProfileStack from "../stacks/profile";
@@ -13,7 +15,7 @@ export const BottomTabBarRoutes: Array<
     keyof BottomTabParamList,
     StackNavigationState<BottomTabParamList>,
     BottomTabNavigationOptions,
-    StackNavigationEventMap
+    BottomTabNavigationEventMap
   >
 > = [
   {

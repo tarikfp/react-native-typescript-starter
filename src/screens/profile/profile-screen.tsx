@@ -1,6 +1,6 @@
 import * as React from "react";
-import { COMMON_STYLES } from "@/theme/common-styles";
 import { Text, View } from "react-native";
+import { COMMON_STYLES } from "~theme/common-styles";
 
 function ProfileScreen() {
   return (

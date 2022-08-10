@@ -1,21 +1,20 @@
-import { initReactI18next } from "react-i18next";
 import i18n, { LanguageDetectorAsyncModule } from "i18next";
-import AsyncStorage from "@react-native-async-storage/async-storage";
-import { AsyncStorageKeys } from "../lib/async-storage";
+import { initReactI18next } from "react-i18next";
+import { appStorage, AppStorageKeys } from "~utils";
 import { Languages } from "./constants/langauge";
-import { languageResources } from "./helpers/language-resources";
 import { getLastSelectedLanguage } from "./helpers/language";
+import { languageResources } from "./helpers/language-resources";
 
 const languageDetector: LanguageDetectorAsyncModule = {
   type: "languageDetector",
   async: true,
-  detect: async (callback: (lang: string) => void) => {
-    const lastSelectedLang = await getLastSelectedLanguage();
+  detect: (callback: (lang: string) => void) => {
+    const lastSelectedLang = getLastSelectedLanguage();
     callback(lastSelectedLang);
   },
   init: () => {},
   cacheUserLanguage: (lng: string) => {
-    AsyncStorage.setItem(AsyncStorageKeys.LANGUAGE, lng);
+    appStorage.set(AppStorageKeys.LANGUAGE, lng);
   },
 };
 

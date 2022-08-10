@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Button, Text, View } from "react-native";
-import { COMMON_STYLES } from "@/theme/common-styles";
+import { COMMON_STYLES } from "~theme/common-styles";
 
 function LaunchScreen() {
   const [count, setCount] = React.useState(0);

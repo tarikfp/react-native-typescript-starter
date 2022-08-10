@@ -1,15 +1,15 @@
-import * as React from "react";
+import { RouteConfig, StackNavigationState } from "@react-navigation/native";
 import {
   createStackNavigator,
-  StackNavigationOptions,
   StackNavigationEventMap,
+  StackNavigationOptions,
 } from "@react-navigation/stack";
-import { RouteConfig, StackNavigationState } from "@react-navigation/native";
-import { LoginScreen } from "@/screens/login";
-import { SignUpScreen } from "@/screens/sign-up";
-import { LaunchScreen } from "@/screens/launch";
-import { AuthStackParamList } from "../types";
+import * as React from "react";
+import { LaunchScreen } from "~screens/launch";
+import { LoginScreen } from "~screens/login";
+import { SignUpScreen } from "~screens/sign-up";
 import { RouteNames } from "../route-names";
+import { AuthStackParamList } from "../types";
 
 const Stack = createStackNavigator<AuthStackParamList>();
 

@@ -1,15 +1,14 @@
-import React, { useRef } from "react";
-import "reflect-metadata";
-import "@/localization/i18n";
-import "./utils/ignore-logs";
 import {
   NavigationContainer,
   NavigationContainerRef,
 } from "@react-navigation/native";
-import withStorybookUI from "./utils/storybook/withStorybook";
+import React, { useRef } from "react";
+import "~localization/i18n";
 import { AppSafeAreaProvider } from "./components/safe-area";
 import { default as RootNavigator } from "./navigation/root-navigator";
 import { MainErrorBoundary } from "./screens/error";
+import "./utils/ignore-logs";
+import withStorybookUI from "./utils/storybook/withStorybook";
 
 function App() {
   const navigationRef = useRef<NavigationContainerRef<any>>(null);

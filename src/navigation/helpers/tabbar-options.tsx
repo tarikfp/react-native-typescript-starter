@@ -1,8 +1,8 @@
+import { BottomTabNavigationOptions } from "@react-navigation/bottom-tabs";
 import React from "react";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
-import { RouteNames } from "@/navigation/route-names";
-import { BottomTabParamList } from "@/navigation/types";
-import { BottomTabNavigationOptions } from "@react-navigation/bottom-tabs";
+import { RouteNames } from "~navigation/route-names";
+import { BottomTabParamList } from "~navigation/types";
 
 export const BottomTabBarOptionByRouteName: Record<
   keyof BottomTabParamList,

@@ -1,7 +1,8 @@
 import * as React from "react";
-import { COMMON_STYLES } from "@/theme/common-styles";
-import { View } from "react-native";
-import { Banner } from "@/components/shared/banner";
+import { Text, View } from "react-native";
+import { Banner } from "~components/shared/banner";
+import { COMMON_STYLES } from "~theme/common-styles";
+import { appStorage, AppStorageKeys } from "~utils";
 import { countToStr } from "./helpers";
 
 function HomeScreen() {
@@ -15,6 +16,10 @@ function HomeScreen() {
         title={countToStr(count)}
         subtitle="Count"
       />
+      <Text>
+        I am the value from mmkv storage{" "}
+        {appStorage.getString(AppStorageKeys.TEST)}
+      </Text>
     </View>
   );
 }

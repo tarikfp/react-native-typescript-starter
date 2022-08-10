@@ -36,6 +36,21 @@ This is a starter project along with boilerplate code which aims to create scala
 - It is significant to write a good commit message, especially when you are collaborating with a team or a developer. Here comes [Commitlint](https://github.com/conventional-changelog/commitlint). It is initialized with the base config!
 - There might be specific scenarios that some actions might need to be executed before committing or pushing the code. [Husky ⚓️](https://github.com/typicode/husky) will take the responsibility for improving the commits along with commitlint. [Husky](https://github.com/typicode/husky) with [commitlint](https://github.com/conventional-changelog/commitlint) is 💣.
 
+## Packages
+
+- [React Navigation v6](https://reactnavigation.org/): Start quickly with built-in navigators that deliver a seamless out-of-the-box experience.
+- [React Navigation Bottom Tabs v6](https://reactnavigation.org/docs/bottom-tab-navigator/): A simple tab bar on the bottom of the screen that lets you switch between different routes.
+- [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons): Customizable Icons for React Native with support for image source and full styling.
+- [React Native Date Time Picker](https://github.com/react-native-datetimepicker/datetimepicker): React Native date & time picker component for iOS, Android and Windows.
+- [React Native MMKV](https://github.com/mrousavy/react-native-mmkv): The fastest key/value storage for React Native. ~30x faster than AsyncStorage!
+- [React Native Net Info](https://github.com/react-native-netinfo/react-native-netinfo): React Native Network Info API for Android & iOS.
+- [React Native Keychain](https://github.com/oblador/react-native-keychain): Keychain/Keystore Access for React Native
+- [React Native Dotenv](https://github.com/goatandsheep/react-native-dotenv): Load react native environment variables using import statements for multiple env files.
+- [React Native Modal](https://github.com/react-native-modal/react-native-modal): An enhanced, animated, customizable Modal for React Native.
+- [Detox](https://github.com/wix/Detox): Gray box end-to-end testing and automation framework for mobile apps.
+- [React Native Clean Project](https://github.com/pmadruga/react-native-clean-project): Automating the clean up of a React Native project.
+- [React Native Storybook](https://github.com/storybookjs/react-native): With Storybook for React Native you can design and develop individual React Native components without running your app.
+- [React Native Utils](https://github.com/tarikpnr/react-native-utils): Utility functions for react native projects.
 
 ## Path resolver
 Nested folders can be seen more frequently if the project gets larger by the time goes on.
@@ -46,7 +61,7 @@ import AppButton from "../../../../../components/button/app-button"
 ```
 Fortunately, [Babel plugin module resolver](https://github.com/tleunen/babel-plugin-module-resolver) with typescript resolves this issue with some quick configurations which is already covered in this project. 
 ```
-import AppButton "@/components/button/app-button" 
+import AppButton "~components/button/app-button"
 ```
 
 
@@ -175,34 +190,14 @@ Therefore, feel free not to stick with kebap-case naming convention.
 
 ## Usage
 
+- Clone the project
+
 ```
 git clone https://github.com/tarikpnr/react-native-typescript-starter.git
 ```
 
-
-Project `react native` version: `0.68.1`
-
-Project `react` version: `17.0.2`
-
-
-
-
-## Screenshots
-
-
-<img src="https://raw.githubusercontent.com/tarikpnr/react-native-typescript-starter/main/screenshots/app-home-screen.png" width="250" height="500"><img src="https://raw.githubusercontent.com/tarikpnr/react-native-typescript-starter/main/screenshots/app-profile-screen.png" width="250" height="500"><img src="https://raw.githubusercontent.com/tarikpnr/react-native-typescript-starter/main/screenshots/storybook-main-screen.png" width="250" height="500"><img src="https://raw.githubusercontent.com/tarikpnr/react-native-typescript-starter/main/screenshots/storybook-navigator.png" width="250" height="500">
-<img src="https://raw.githubusercontent.com/tarikpnr/react-native-typescript-starter/main/screenshots/storybook-button.png" width="250" height="500">
-<img src="https://raw.githubusercontent.com/tarikpnr/react-native-typescript-starter/main/screenshots/storybook-button-knobs.png" width="250" height="500"><img src="https://raw.githubusercontent.com/tarikpnr/react-native-typescript-starter/main/screenshots/storybook-banner.png" width="250" height="500"><img src="https://raw.githubusercontent.com/tarikpnr/react-native-typescript-starter/main/screenshots/storybook-banner-knobs.png" width="250" height="500">
-
-
-## Feedback
-
-If you have any feedback, please reach out to me at tarikdotcom@gmail.com
-
-
-
+- [react-native-rename](https://github.com/junedomingo/react-native-rename) for renaming project to the desired one.
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
-
+MIT
