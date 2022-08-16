@@ -36,7 +36,7 @@ This is a starter project along with boilerplate code which aims to create scala
 - It is significant to write a good commit message, especially when you are collaborating with a team or a developer. Here comes [Commitlint](https://github.com/conventional-changelog/commitlint). It is initialized with the base config!
 - There might be specific scenarios that some actions might need to be executed before committing or pushing the code. [Husky ⚓️](https://github.com/typicode/husky) will take the responsibility for improving the commits along with commitlint. [Husky](https://github.com/typicode/husky) with [commitlint](https://github.com/conventional-changelog/commitlint) is 💣.
 
-## Packages
+## Packages 🎉
 
 - [React Navigation v6](https://reactnavigation.org/): Start quickly with built-in navigators that deliver a seamless out-of-the-box experience.
 - [React Navigation Bottom Tabs v6](https://reactnavigation.org/docs/bottom-tab-navigator/): A simple tab bar on the bottom of the screen that lets you switch between different routes.
@@ -51,6 +51,35 @@ This is a starter project along with boilerplate code which aims to create scala
 - [React Native Clean Project](https://github.com/pmadruga/react-native-clean-project): Automating the clean up of a React Native project.
 - [React Native Storybook](https://github.com/storybookjs/react-native): With Storybook for React Native you can design and develop individual React Native components without running your app.
 - [React Native Utils](https://github.com/tarikpnr/react-native-utils): Utility functions for react native projects.
+
+
+
+## Running e2e test 🤖
+
+There is an already initial setup for e2e test in the project. Make sure you run the build script for detox beforehand, then simply executing `detox test` will have the following result.
+
+<img src="./screenshots/detox-first-test.gif"/>
+
+### Code
+```
+const { reloadApp } = require("./reload");
+
+describe("Example", () => {
+  beforeEach(async () => {
+    await reloadApp();
+  });
+
+  it("should have welcome screen", async () => {
+    await expect(element(by.id("WelcomeScreen"))).toBeVisible();
+  });
+
+  it("should tap the button and counter should be increased by one", async () => {
+    await element(by.id("tap-me")).tap();
+    await expect(element(by.id("counter"))).toHaveText("1");
+  });
+});
+```
+
 
 ## Path resolver
 Nested folders can be seen more frequently if the project gets larger by the time goes on.
