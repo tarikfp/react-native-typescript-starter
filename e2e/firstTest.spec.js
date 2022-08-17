@@ -13,7 +13,7 @@ describe("Example", () => {
     await expect(element(by.id("WelcomeScreen"))).toBeVisible();
   });
 
-  it("should tap the button and text content should change", async () => {
+  it("should tap the button and counter should be increased by one", async () => {
     await element(by.id("tap-me")).tap();
     await expect(element(by.id("counter"))).toHaveText("1");
   });
