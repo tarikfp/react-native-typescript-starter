@@ -80,6 +80,12 @@ describe("Example", () => {
 });
 ```
 
+## Storybook usage 📙
+
+Toggle between storybook and app seamlessly!
+
+<img src="./screenshots/storybook-usage.gif"/>
+
 
 ## Path resolver
 Nested folders can be seen more frequently if the project gets larger by the time goes on.
@@ -226,6 +232,29 @@ git clone https://github.com/tarikpnr/react-native-typescript-starter.git
 ```
 
 - [react-native-rename](https://github.com/junedomingo/react-native-rename) for renaming project to the desired one.
+
+
+## Screenshots
+
+<table>
+  <tr>
+ 
+  </tr>
+  <tr>
+    <td><img src="./screenshots/app-home-screen.png"></td>
+    <td><img src="screenshots/app-profile-screen.png"></td>
+    <td><img src="screenshots/storybook-banner-knobs.png"></td>
+  </tr>
+    <tr>
+    <td><img src="./screenshots/storybook-banner.png"></td>
+    <td><img src="screenshots/storybook-button-knobs.png"></td>
+    <td><img src="screenshots/storybook-button.png"></td>
+  </tr>
+    <tr>
+    <td><img src="./screenshots/storybook-navigator.png"></td>
+    <td><img src="screenshots/storybook-main-screen.png"></td>
+  </tr>
+ </table>
 
 ## License
 
