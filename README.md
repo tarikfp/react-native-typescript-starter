@@ -252,6 +252,19 @@ git clone https://github.com/tarikpnr/react-native-typescript-starter.git
 - [react-native-rename](https://github.com/junedomingo/react-native-rename) for renaming project to the desired one.
 
 
+
+## Example apps
+
+- [React Native N64 Voter App](https://github.com/tarikpnr/react-native-n64-voter-app)
+
+
+
+
+
+
+
+
+
 ## Screenshots
 
 <table>
