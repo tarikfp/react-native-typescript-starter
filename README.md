@@ -1,6 +1,21 @@
-# React Native Typescript Starter
+<div align="center"><h1>React Native Typescript Starter</h1></div> 
 
-This is a starter project along with boilerplate code which aims to create scalable, robust and enterprise level React Native Typescript applications 🚀
+<div align="center"><p1 align="center">This is a starter project along with boilerplate code which aims to create scalable, robust and enterprise level React Native Typescript applications 🚀</p1></div>
+
+
+## Table of contents
+
+*  [What is in it?](#what-is-in-it)
+*  [Packages](#packages-)
+*  [Running e2e tests 🤖](#running-e2e-test-)
+*  [Storybook usage 📙](#storybook-usage-)
+*  [Path resolver](#path-resolver)
+*  [Folder structure](#folder-structure)
+*  [Usage](#usage)
+*  [Screenshots](#screenshots)
+*  [Contributing](#contributing)
+*  [License](#license)
+
 
 ## What is in it?
 
@@ -255,6 +270,10 @@ git clone https://github.com/tarikpnr/react-native-typescript-starter.git
     <td><img src="screenshots/storybook-main-screen.png"></td>
   </tr>
  </table>
+ 
+## Contributing
+
+The main purpose of this library is to provide a highly scalable, robust and bug-free react native project. Contributors are always highly appreciated to keep this library maintained and enhance it more.
 
 ## License
 
