@@ -75,8 +75,9 @@ There is an already initial setup for e2e test in the project. Make sure you run
 
 <img src="./screenshots/detox-first-test.gif"/>
 
-### Code
-```
+<details><summary>Code</summary>
+
+```js
 const { reloadApp } = require("./reload");
 
 describe("Example", () => {
@@ -94,6 +95,8 @@ describe("Example", () => {
   });
 });
 ```
+
+</details>
 
 ## Storybook usage 📙
 
