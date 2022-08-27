@@ -14,6 +14,10 @@ declare global {
     interface ThemeColors {
       paper: string;
       textLight: string;
+      border: string;
+      primaryLight: string;
+      primaryDisabled: string;
+      secondary: string;
     }
   }
 }

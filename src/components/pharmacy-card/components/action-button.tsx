@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "react-native-paper";
-import { makeStyles } from "../../../theme/make-styles";
+import { makeStyles } from "~theme/make-styles";
 
 type Props = React.ComponentProps<typeof Button>;
 

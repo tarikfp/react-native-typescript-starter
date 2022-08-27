@@ -7,9 +7,10 @@ import { DarkTheme as PaperDarkTheme } from "react-native-paper";
 import { theme as CustomizedPaperDefaultTheme } from "./index";
 
 export const CombinedDefaultTheme = merge(
-  CustomizedPaperDefaultTheme,
   NavigationDefaultTheme,
+  CustomizedPaperDefaultTheme,
 );
+
 export const CombinedDarkTheme = merge(PaperDarkTheme, NavigationDarkTheme);
 
 /* const CombinedDefaultTheme = {

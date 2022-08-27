@@ -2,7 +2,6 @@ import { createStackNavigator } from "@react-navigation/stack";
 import * as React from "react";
 import { TFunction, useTranslation } from "react-i18next";
 import { HomeScreen } from "~screens/home";
-import InnerHomeScreen from "../../screens/inner-home/screen";
 import { homeStackNavigatorOptions } from "../helpers/stack-screen-options";
 import { RouteNames } from "../route-names";
 import { HomeStackParamList, StackRoutesType } from "../types";
@@ -14,11 +13,6 @@ const homeStackRoutes = (t: TFunction): StackRoutesType<HomeStackParamList> => [
     name: RouteNames.home,
     component: HomeScreen,
     options: { title: t("pharmacies-on-duty") },
-  },
-  {
-    name: "innerHome",
-    component: InnerHomeScreen,
-    options: { title: "inner home" },
   },
 ];
 
