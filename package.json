@@ -35,6 +35,7 @@
   "dependencies": {
     "@react-native-community/clipboard": "^1.5.1",
     "@react-native-community/datetimepicker": "^3.4.6",
+    "@react-native-community/geolocation": "^2.1.0",
     "@react-native-community/netinfo": "^8.1.0",
     "@react-native-masked-view/masked-view": "^0.2.6",
     "@react-navigation/bottom-tabs": "^6.3.1",
@@ -42,12 +43,14 @@
     "@react-navigation/native": "^6.0.8",
     "@react-navigation/stack": "^6.1.1",
     "@tarikfp/react-native-utils": "^0.0.19",
+    "@timwangdev/react-native-geocoder": "^1.0.0-alpha.7",
     "axios": "^0.27.2",
     "deepmerge": "^4.2.2",
     "i18next": "^20.6.1",
     "react": "17.0.2",
     "react-i18next": "^11.12.0",
     "react-native": "0.68.1",
+    "react-native-android-location-enabler": "^1.2.2",
     "react-native-collapsible": "^1.6.0",
     "react-native-dotenv": "^3.3.1",
     "react-native-gesture-handler": "^2.4.2",
@@ -59,7 +62,8 @@
     "react-native-screens": "^3.13.1",
     "react-native-size-matters": "^0.4.0",
     "react-native-vector-icons": "^9.1.0",
-    "twrnc": "^3.4.0"
+    "twrnc": "^3.4.0",
+    "zustand": "^4.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

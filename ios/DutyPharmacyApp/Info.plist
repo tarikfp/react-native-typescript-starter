@@ -73,7 +73,9 @@
 		</dict>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string>Location permission is required in order to provide best service</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Location permission is required in order to provide best service</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>AntDesign.ttf</string>

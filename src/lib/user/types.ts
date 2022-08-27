@@ -1,9 +1,13 @@
+import { GeocodingObject } from "@timwangdev/react-native-geocoder";
+
 export type UserLocation = {
-  readonly latitude: string;
-  readonly longitude: string;
+  readonly latitude: number;
+  readonly longitude: number;
 };
 
 export type User = {
-  location: UserLocation;
-  selectedLocation: UserLocation;
+  geocodedPosition: GeocodingObject | undefined;
+  initialLocation: UserLocation | undefined;
+  liveLocation: UserLocation | undefined;
+  selectedLocation: UserLocation | undefined;
 };
