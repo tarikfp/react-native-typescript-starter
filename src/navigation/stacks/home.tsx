@@ -1,26 +1,34 @@
-import { createStackNavigator } from "@react-navigation/stack";
+import { RouteConfig, StackNavigationState } from "@react-navigation/native";
+import {
+  createStackNavigator,
+  StackNavigationEventMap,
+  StackNavigationOptions,
+} from "@react-navigation/stack";
 import * as React from "react";
-import { TFunction, useTranslation } from "react-i18next";
 import { HomeScreen } from "~screens/home";
-import { homeStackNavigatorOptions } from "../helpers/stack-screen-options";
 import { RouteNames } from "../route-names";
-import { HomeStackParamList, StackRoutesType } from "../types";
+import { HomeStackParamList } from "../types";
 
 const Stack = createStackNavigator<HomeStackParamList>();
 
-const homeStackRoutes = (t: TFunction): StackRoutesType<HomeStackParamList> => [
-  {
-    name: RouteNames.home,
-    component: HomeScreen,
-    options: { title: t("pharmacies-on-duty") },
-  },
-];
+const homeStackRoutes: Array<
+  RouteConfig<
+    HomeStackParamList,
+    keyof HomeStackParamList,
+    StackNavigationState<HomeStackParamList>,
+    StackNavigationOptions,
+    StackNavigationEventMap
+  >
+> = [{ name: RouteNames.home, component: HomeScreen }];
 
 function HomeStack() {
-  const { t } = useTranslation();
   return (
-    <Stack.Navigator {...homeStackNavigatorOptions}>
-      {homeStackRoutes(t).map((routes) => (
+    <Stack.Navigator
+      screenOptions={{
+        headerShown: false,
+      }}
+      initialRouteName={RouteNames.home}>
+      {homeStackRoutes.map((routes) => (
         <Stack.Screen key={routes.name} {...routes} />
       ))}
     </Stack.Navigator>

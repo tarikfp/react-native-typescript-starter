@@ -1,1 +1,1 @@
-export * as UserTypes from "./types";
+export * from "./user.interface";

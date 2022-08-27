@@ -285,10 +285,6 @@ PODS:
   - React-jsinspector (0.68.1)
   - React-logger (0.68.1):
     - glog
-  - react-native-geocoder (1.0.0-alpha.7):
-    - React
-  - react-native-geolocation (2.1.0):
-    - React-Core
   - react-native-mmkv (2.4.3):
     - MMKV (>= 1.2.13)
     - React-Core
@@ -428,8 +424,6 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
-  - "react-native-geocoder (from `../node_modules/@timwangdev/react-native-geocoder`)"
-  - "react-native-geolocation (from `../node_modules/@react-native-community/geolocation`)"
   - react-native-mmkv (from `../node_modules/react-native-mmkv`)
   - "react-native-netinfo (from `../node_modules/@react-native-community/netinfo`)"
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
@@ -511,10 +505,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   React-logger:
     :path: "../node_modules/react-native/ReactCommon/logger"
-  react-native-geocoder:
-    :path: "../node_modules/@timwangdev/react-native-geocoder"
-  react-native-geolocation:
-    :path: "../node_modules/@react-native-community/geolocation"
   react-native-mmkv:
     :path: "../node_modules/react-native-mmkv"
   react-native-netinfo:
@@ -596,8 +586,6 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 4a4bae5671b064a2248a690cf75957669489d08c
   React-jsinspector: 218a2503198ff28a085f8e16622a8d8f507c8019
   React-logger: f79dd3cc0f9b44f5611c6c7862badd891a862cf8
-  react-native-geocoder: 225895386f04bf37515eaa09c419dea9b923f40b
-  react-native-geolocation: 69f4fd37650b8e7fee91816d395e62dd16f5ab8d
   react-native-mmkv: 1265a348a4711097ba29c8bcefd5971f48220f2b
   react-native-netinfo: 1a6035d3b9780221d407c277ebfb5722ace00658
   react-native-safe-area-context: 6c12e3859b6f27b25de4fee8201cfb858432d8de
@@ -624,6 +612,6 @@ SPEC CHECKSUMS:
   Yoga: 17cd9a50243093b547c1e539c749928dd68152da
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 5450c1e590a736c5e21df72604ea06b48326f0fb
+PODFILE CHECKSUM: c601ceded3f1a18488f7a68a9c8a9fb15dcaccbe
 
 COCOAPODS: 1.11.3

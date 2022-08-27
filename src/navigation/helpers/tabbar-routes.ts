@@ -3,11 +3,11 @@ import {
   BottomTabNavigationOptions,
 } from "@react-navigation/bottom-tabs";
 import { RouteConfig, StackNavigationState } from "@react-navigation/native";
+import { BottomTabBarOptionByRouteName } from "~navigation/helpers/tabbar-options";
 import { RouteNames } from "../route-names";
 import HomeStack from "../stacks/home";
 import ProfileStack from "../stacks/profile";
 import { BottomTabParamList } from "../types";
-import { getBottomTabBarOptionByRouteName } from "./tabbar-options";
 
 export const BottomTabBarRoutes: Array<
   RouteConfig<
@@ -19,12 +19,12 @@ export const BottomTabBarRoutes: Array<
   >
 > = [
   {
-    options: getBottomTabBarOptionByRouteName(RouteNames.homeStack),
+    options: BottomTabBarOptionByRouteName[RouteNames.homeStack],
     name: RouteNames.homeStack,
     component: HomeStack,
   },
   {
-    options: getBottomTabBarOptionByRouteName(RouteNames.profileStack),
+    options: BottomTabBarOptionByRouteName[RouteNames.profileStack],
     name: RouteNames.profileStack,
     component: ProfileStack,
   },

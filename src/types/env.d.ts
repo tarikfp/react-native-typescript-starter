@@ -1,3 +1,4 @@
 declare module "react-native-dotenv" {
-  export const GOOGLE_API_KEY: string;
+  export const BASE_URL: string;
+  export const JWT_SECRET: string;
 }

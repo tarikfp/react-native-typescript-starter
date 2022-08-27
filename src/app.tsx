@@ -3,32 +3,25 @@ import {
   NavigationContainerRef,
 } from "@react-navigation/native";
 import React, { useRef } from "react";
-import { Provider as PaperProvider } from "react-native-paper";
 import "~localization/i18n";
 import { AppSafeAreaProvider } from "./components/safe-area";
-import useThemePreferenceValues from "./hooks/useToggleTheme";
 import { default as RootNavigator } from "./navigation/root-navigator";
 import { MainErrorBoundary } from "./screens/error";
-import { ThemePreferenceContext } from "./theme/context";
 import "./utils/ignore-logs";
+import withStorybookUI from "./utils/storybook/withStorybook";
 
 function App() {
   const navigationRef = useRef<NavigationContainerRef<any>>(null);
-  const { theme, ...preferences } = useThemePreferenceValues();
 
   return (
-    <ThemePreferenceContext.Provider value={preferences}>
-      <PaperProvider theme={theme as any}>
-        <NavigationContainer theme={theme} ref={navigationRef}>
-          <AppSafeAreaProvider>
-            <MainErrorBoundary>
-              <RootNavigator />
-            </MainErrorBoundary>
-          </AppSafeAreaProvider>
+    <AppSafeAreaProvider>
+      <MainErrorBoundary>
+        <NavigationContainer ref={navigationRef}>
+          <RootNavigator />
         </NavigationContainer>
-      </PaperProvider>
-    </ThemePreferenceContext.Provider>
+      </MainErrorBoundary>
+    </AppSafeAreaProvider>
   );
 }
 
-export default App;
+export default withStorybookUI(App);

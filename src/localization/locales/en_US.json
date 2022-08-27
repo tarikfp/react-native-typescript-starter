@@ -1,18 +1,3 @@
 {
-  "pharmacies-on-duty": "Pharmacies on duty",
-  "nearby-on-duty-pharmacies": "Nearby on duty pharmacies",
-  "nearby-pharmacies": "Nearby pharmacies",
-  "show-in-maps": "Show in maps",
-  "city": "City",
-  "address": "Adress",
-  "district": "District",
-  "neighborhood": "Neighborhood",
-  "directions": "Directions",
-  "phone": "Phone",
-  "phone-two": "Phone two",
-  "name-of-Pharmacy": "Pharmacy name",
-  "show-more": "Show more",
-  "hide": "Hide",
-  "call": "Call",
-  "call-phone-two": "Call phone two"
+  "hi": "Hi"
 }
