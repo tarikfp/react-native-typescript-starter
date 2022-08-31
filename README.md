@@ -73,7 +73,10 @@
 
 There is an already initial setup for e2e test in the project. Make sure you run the build script for detox beforehand, then simply executing `detox test` will have the following result.
 
+
+<p align="center">
 <img src="./screenshots/detox-first-test.gif"/>
+</p>
 
 <details><summary>Code</summary>
 
@@ -102,7 +105,10 @@ describe("Example", () => {
 
 Toggle between storybook and app seamlessly!
 
+
+<p align="center">
 <img src="./screenshots/storybook-usage.gif"/>
+</p>
 
 
 ## Path resolver
