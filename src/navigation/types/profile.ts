@@ -1,6 +1,6 @@
 import { BottomTabNavigationProp } from "@react-navigation/bottom-tabs";
 import { CompositeNavigationProp, RouteProp } from "@react-navigation/native";
-import { StackNavigationProp } from "@react-navigation/stack";
+import { StackNavigationProp, StackScreenProps } from "@react-navigation/stack";
 import { RouteNames } from "../route-names";
 import { BottomTabParamList } from "./tabbar";
 
@@ -22,3 +22,8 @@ export type ProfileStackNavigationProp<
 export type ProfileStackRouteProp<
   RouteName extends keyof ProfileStackParamList,
 > = RouteProp<ProfileStackParamList, RouteName>;
+
+// Profile stack screen props
+export type ProfileStackScreenProp<
+  RouteName extends keyof ProfileStackParamList,
+> = StackScreenProps<ProfileStackParamList, RouteName>;

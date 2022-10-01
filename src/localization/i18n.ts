@@ -28,8 +28,6 @@ i18n
     resources: languageResources,
     fallbackLng: Languages.en,
     interpolation: {
-      prefix: "{",
-      suffix: "}",
       escapeValue: false,
     },
   });

@@ -1,6 +1,6 @@
-import * as React from "react";
 import NetInfo, { NetInfoState } from "@react-native-community/netinfo";
-import { showNativeAlert } from "@tarikfp/react-native-utils";
+import * as React from "react";
+import { Alert } from "react-native";
 
 export const useNetInfoListener = (
   callback: (netState: NetInfoState) => void,
@@ -18,9 +18,6 @@ export const useNetInfoListener = (
 export const handleCheckNetworkActivity = async (): Promise<void> => {
   const netInfo = await NetInfo.fetch();
   if (!netInfo.isConnected) {
-    showNativeAlert({
-      content: "No internet",
-      buttonOneText: "Ok",
-    });
+    Alert.alert("Warning", "No internet", [{ text: "Ok" }]);
   }
 };

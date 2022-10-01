@@ -1,10 +1,6 @@
-import { RouteConfig, StackNavigationState } from "@react-navigation/native";
-import {
-  createStackNavigator,
-  StackNavigationEventMap,
-  StackNavigationOptions,
-} from "@react-navigation/stack";
+import { createStackNavigator } from "@react-navigation/stack";
 import * as React from "react";
+import { StackRoutesType } from "~navigation/types/common";
 import { LaunchScreen } from "~screens/launch";
 import { LoginScreen } from "~screens/login";
 import { SignUpScreen } from "~screens/sign-up";
@@ -13,15 +9,7 @@ import { AuthStackParamList } from "../types";
 
 const Stack = createStackNavigator<AuthStackParamList>();
 
-const authStackRoutes: Array<
-  RouteConfig<
-    AuthStackParamList,
-    keyof AuthStackParamList,
-    StackNavigationState<AuthStackParamList>,
-    StackNavigationOptions,
-    StackNavigationEventMap
-  >
-> = [
+const authStackRoutes: StackRoutesType<AuthStackParamList> = [
   { name: RouteNames.login, component: LoginScreen },
   { name: RouteNames.signUp, component: SignUpScreen },
   { name: RouteNames.launch, component: LaunchScreen },

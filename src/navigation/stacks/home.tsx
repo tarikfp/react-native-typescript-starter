@@ -1,25 +1,14 @@
-import { RouteConfig, StackNavigationState } from "@react-navigation/native";
-import {
-  createStackNavigator,
-  StackNavigationEventMap,
-  StackNavigationOptions,
-} from "@react-navigation/stack";
+import { createStackNavigator } from "@react-navigation/stack";
 import * as React from "react";
 import { HomeScreen } from "~screens/home";
 import { RouteNames } from "../route-names";
-import { HomeStackParamList } from "../types";
+import { HomeStackParamList, StackRoutesType } from "../types";
 
 const Stack = createStackNavigator<HomeStackParamList>();
 
-const homeStackRoutes: Array<
-  RouteConfig<
-    HomeStackParamList,
-    keyof HomeStackParamList,
-    StackNavigationState<HomeStackParamList>,
-    StackNavigationOptions,
-    StackNavigationEventMap
-  >
-> = [{ name: RouteNames.home, component: HomeScreen }];
+const homeStackRoutes: StackRoutesType<HomeStackParamList> = [
+  { name: RouteNames.home, component: HomeScreen },
+];
 
 function HomeStack() {
   return (
